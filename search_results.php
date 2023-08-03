@@ -16,7 +16,7 @@
             <ul class="nav-links">
                 <li><a href="landing_page.php">Accueil</a></li>
                 <li><a href="#">Chambres</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.php">Contact</a></li>
             </ul>
          
         </nav>
