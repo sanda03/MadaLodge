@@ -1,9 +1,8 @@
-DROP DATABASE IF EXISTS hotel_managing;
+DROP DATABASE IF EXISTS madalodge_database;
 
-CREATE DATABASE hotel_managing;
-\c hotel_managing;
+CREATE DATABASE madalodge_database;
 
-CREATE TABLE "role" (
+CREATE TABLE role (
     role_id SERIAL PRIMARY KEY,
     role_name VARCHAR(20) NOT NULL
 );
@@ -11,40 +10,40 @@ CREATE TABLE "role" (
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     username VARCHAR(255) NOT NULL,
-    "password" VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
     first_name VARCHAR(128) NOT NULL,
     last_name VARCHAR(128) NOT NULL,
     cin VARCHAR(20) NOT NULL,
     society_name VARCHAR(128) NOT NULL,
-    "number" VARCHAR(20) NOT NULL,
+    number VARCHAR(20) NOT NULL,
     email VARCHAR(50) NOT NULL,
     secondary_number VARCHAR(20) NOT NULL,
     gender CHAR(1) NOT NULL,
     birthdate DATE NOT NULL,
-    role_id INT NOT NULL REFERENCES "role"(role_id)
+    role_id INT NOT NULL REFERENCES role(role_id)
 );
 
 CREATE TABLE payment_method (
     id SERIAL PRIMARY KEY,
-    "name" VARCHAR(20) NOT NULL
+    name VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE room_option (
     id SERIAL PRIMARY KEY,
-    "name" VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
     description TEXT NOT NULL,
     price NUMERIC NOT NULL
 );
 
 CREATE TABLE room_type (
     id SERIAL PRIMARY KEY,
-    "name" VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
     base_price NUMERIC NOT NULL
 );
 
 CREATE TABLE discount (
     id SERIAL PRIMARY KEY,
-    "name" VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
     rate FLOAT NOT NULL,
     start_time TIMESTAMP NOT NULL,
     end_time TIMESTAMP NOT NULL
@@ -52,12 +51,12 @@ CREATE TABLE discount (
 
 CREATE TABLE city (
     id SERIAL PRIMARY KEY,
-    "name" VARCHAR(255) NOT NULL
+    name VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE hotel (
     id SERIAL PRIMARY KEY,
-    "name" VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
     address TEXT NOT NULL,
     is_active BOOLEAN NOT NULL,
     id_city INT NOT NULL REFERENCES city(id)
@@ -85,12 +84,12 @@ CREATE TABLE reservation (
     is_paid BOOLEAN DEFAULT false,
     is_cancelled BOOLEAN DEFAULT false,
     penalty_rate FLOAT DEFAULT 0,
-    handler_id INT REFERENCES users(id) NOT NULL,
+    handler_id INT NOT NULL REFERENCES users(id),
     id_room INT REFERENCES room(id),
     id_conference_room INT REFERENCES conference_room(id),
-    id_payment_method INT REFERENCES payment_method(id) NOT NULL,
-    id_user INT REFERENCES users(id) NOT NULL,
-    CONSTRAINT timestamp_check CHECK (start_timestamp > CURRENT_TIMESTAMP AND end_timestamp > start_timestamp),
+    id_payment_method INT NOT NULL REFERENCES payment_method(id),
+    id_user INT NOT NULL REFERENCES users(id),
+    CONSTRAINT timestamp_check CHECK (end_timestamp > start_timestamp),
     CONSTRAINT room_or_conference_not_null CHECK (id_room IS NOT NULL OR id_conference_room IS NOT NULL)
 );
 

@@ -1,11 +1,11 @@
-INSERT INTO "role" (role_name) VALUES
+INSERT INTO role (role_name) VALUES
 ('Administrator'),
 ('Receptionist'),
 ('Cleaning staff'),
 ('Client'),
 ('Visitor');
 
-INSERT INTO users (username, "password", first_name, last_name, cin, society_name, "number", email, secondary_number, gender, birthdate, role_id) VALUES
+INSERT INTO users (username, password, first_name, last_name, cin, society_name, number, email, secondary_number, gender, birthdate, role_id) VALUES
 ('johnDoe', 'password123', 'John', 'Doe', '123456789', 'ABC Company', '1234567890', 'john.doe@example.com', '9876543210', 'M', '1990-01-01', 1),
 ('janeSmith', 'password456', 'Jane', 'Smith', '987654321', 'XYZ Corporation', '0987654321', 'jane.smith@example.com', '0123456789', 'F', '1992-05-10', 2),
 ('bobJohnson', 'password789', 'Bob', 'Johnson', '543216789', '123 Industries', '4567890123', 'bob.johnson@example.com', '7890123456', 'M', '1985-11-15', 3),
@@ -14,34 +14,34 @@ INSERT INTO users (username, "password", first_name, last_name, cin, society_nam
 
 
 
-INSERT INTO room_option ("name", description, price) VALUES
+INSERT INTO room_option (name, description, price) VALUES
 ('Jacuzzi', 'Profitez du jacuzzi priv� dans votre chambre pour une d�tente ultime.', 50.00),
 ('Vue sur la mer', 'Admirez une vue magnifique sur la mer depuis votre chambre.', 20.00),
 ('Service de chambre 24h/24', 'Profitez du service de chambre disponible 24h/24 pour satisfaire vos besoins.', 15.00),
 ('Wi-Fi haut d�bit', 'Restez connect� avec un acc�s Wi-Fi haut d�bit dans votre chambre.', 10.00),
 ('Petit-d�jeuner inclus', 'Commencez votre journ�e avec un d�licieux petit-d�jeuner inclus dans votre s�jour.', 25.00);
 
-INSERT INTO room_type ("name", base_price) VALUES
+INSERT INTO room_type (name, base_price) VALUES
 ('Simple', 100.00),
 ('Double', 150.00),
 ('Familial', 200.00),
 ('VIP', 250.00);
 
-INSERT INTO discount ("name", rate, start_time, end_time) VALUES
+INSERT INTO discount (name, rate, start_time, end_time) VALUES
 ('Offre sp�ciale �t�', 0.15, '2023-06-01', '2023-08-31'),
 ('Promotion de printemps', 0.10, '2023-03-15', '2023-04-15'),
 ('R�duction de derni�re minute', 0.20, '2023-07-01', '2023-07-07'),
 ('Offre de r�servation anticip�e', 0.25, '2023-09-01', '2023-12-31'),
 ('R�duction pour les membres', 0.12, '2023-01-01', '2023-12-31');
 
-INSERT INTO city ("name") VALUES
+INSERT INTO city (name) VALUES
 ('Antananarivo'),
 ('Toamasina'),
 ('Mahajanga'),
 ('Antsirabe'),
 ('Fianarantsoa');
 
-INSERT INTO hotel ("name", address, is_active, id_city) VALUES
+INSERT INTO hotel (name, address, is_active, id_city) VALUES
 ('H�tel A', 'Adresse A', true, 1),
 ('H�tel B', 'Adresse B', true, 1),
 ('H�tel C', 'Adresse C', true, 2),
@@ -81,7 +81,7 @@ INSERT INTO conference_room (capacity, price_per_hour, id_hotel) VALUES
 (40, 90.00, 4),
 (25, 70.00, 5);
 
-INSERT INTO payment_method ("name")
+INSERT INTO payment_method (name)
 VALUES
 ('Cash'),
 ('Mobile money');
