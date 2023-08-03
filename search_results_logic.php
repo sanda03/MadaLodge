@@ -1,6 +1,4 @@
 <?php
-// Connexion à la base de données et exécution de la requête ici...
-// Assurez-vous que les données récupérées de la base de données sont correctement formatées dans la boucle suivante.
 
 // Connexion à la base de données
 $servername = "localhost";
