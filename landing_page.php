@@ -11,7 +11,7 @@
     <header id="header">
         <div class="container">
             <div class="logo">
-                <img src="pictures\Capture-removebg-preview.png" alt="Logo">
+                <img src="img\Capture-removebg-preview.png" alt="Logo">
             </div>
             <nav>
                 <ul>
