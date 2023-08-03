@@ -1,0 +1,132 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styles */
+  #header {
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 0;
+  z-index: 1;
+  padding: 30px;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    float: left;
+  }
+  
+  .logo img {
+    width: auto;
+    height: auto;
+    margin-left: -250px;
+    margin-top: -80px;
+    
+  }
+  
+  nav {
+    float: right;
+  
+  }
+  
+  nav ul {
+    margin-top: 70px;
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline;
+    
+
+  }
+  
+  nav a {
+    font-size: x-large;
+    color: rgb(23, 100, 31);
+    text-decoration: none;
+    padding: 9px;
+    border-radius: 20px;
+    background-color: aliceblue;
+  }
+  
+  /* Search section styles */
+  .search-section {
+    background-image: url('../pictures/graphic-node-yPSbirjJWzs-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+  }
+  
+  h1 {
+   color: rgb(194, 116, 32);
+    font-size: 46px;
+    margin-top: 400px;
+    background-color: #09381771;
+  }
+  
+  
+  #search-form {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 200px;
+    border-radius: 20px;
+    background-color: #0d491d53;
+  }
+  
+  #search-form input {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #search-form button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #093817;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Add other CSS styles as needed */
+  
+  .cta-button {
+    background-color: #daab11;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #e7523b;
+  }
