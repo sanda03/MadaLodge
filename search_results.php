@@ -11,7 +11,7 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="pictures\Capture-removebg-preview.png" alt="Logo de votre site">
+                <img src="img\Capture-removebg-preview.png" alt="Logo de votre site">
             </div>
             <ul class="nav-links">
                 <li><a href="landing_page.php">Accueil</a></li>
