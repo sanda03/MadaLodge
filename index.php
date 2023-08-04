@@ -1,1 +1,41 @@
 
+<?php 
+    try{		
+        $db = new PDO('mysql:host=localhost; dbname=madalodge_database; charset=utf8','root','',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    }
+    catch(Exception $e){
+        die('Erreur :' . $e -> getMessage());
+    }
+    $request = $db -> query('
+        SELECT * FROM users
+    ');
+    
+?>
+<!--?php 
+    while($result = $request -> fetch()) {
+        echo '<p>'. htmlspecialchars($result['username']) .'<p/>';
+    }
+?-->
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <link rel="stylesheet" href="css/index_style.css">
+    <title>Index</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <div id="page">
+        <h1>JESUS IS THE KING</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid enim suscipit, harum cumque, corporis non magnam eligendi illum esse doloremque architecto officiis. Quisquam pariatur dolorum delectus recusandae adipisci deserunt maxime!</p>
+        <div id="hotels">
+            <img src="css/img/hotel/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge.jpg" alt="">    
+            <img src="css/img/hotel/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge.jpg" alt="">    
+            <img src="css/img/hotel/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge.jpg" alt="">    
+        </div>
+    </div>
+    
+</body>
+</html>
