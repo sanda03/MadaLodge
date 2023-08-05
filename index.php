@@ -36,7 +36,7 @@
     <h1>Hello</h1>
     <div id="page">
       <h1>JESUS IS THE KING</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid enim suscipit, harum cumque, corporis non magnam eligendi illum esse doloremque architecto officiis. Quisquam pariatur dolorum delectus recusandae adipisci deserunt maxime!</p>
+      <p>xLorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid enim suscipit, harum cumque, corporis non magnam eligendi illum esse doloremque architecto officiis. Quisquam pariatur dolorum delectus recusandae adipisci deserunt maxime!</p>
       <div id="hotels">
         <div class="carousel"></div>
       </div>   
