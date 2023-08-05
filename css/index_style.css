@@ -29,7 +29,6 @@ body {
     height: 100vh;
 }
 #hotels img {
-    height: 12vw;
 }
 @media screen and (max-width: 780x) {
     #page {

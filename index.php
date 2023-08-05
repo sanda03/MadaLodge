@@ -23,19 +23,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=0">
     <link rel="stylesheet" href="css/index_style.css">
+    <!--link rel="stylesheet" href="css/bootstrap.css"-->
+    <link rel="stylesheet" href="css/carousel.css">
     <title>Index</title>
+    <script src="js/carousel.js" defer></script>
+    <script src="js/jquery.min.js" defer></script>
+    <!--script src="js/bootstrap.bundle.min.js" defer></script-->
+    <!--script scr="js/bootstrap.js" defer></script-->
 </head>
 <body>
+  <div id="all">
     <h1>Hello</h1>
     <div id="page">
-        <h1>JESUS IS THE KING</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid enim suscipit, harum cumque, corporis non magnam eligendi illum esse doloremque architecto officiis. Quisquam pariatur dolorum delectus recusandae adipisci deserunt maxime!</p>
-        <div id="hotels">
-            <img src="css/img/hotel/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge.jpg" alt="">    
-            <img src="css/img/hotel/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge.jpg" alt="">    
-            <img src="css/img/hotel/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge.jpg" alt="">    
-        </div>
+      <h1>JESUS IS THE KING</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid enim suscipit, harum cumque, corporis non magnam eligendi illum esse doloremque architecto officiis. Quisquam pariatur dolorum delectus recusandae adipisci deserunt maxime!</p>
+      <div id="hotels">
+        <div class="carousel"></div>
+      </div>   
     </div>
-    
+  </div> 
 </body>
 </html>
