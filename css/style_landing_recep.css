@@ -1,0 +1,8 @@
+table {
+    background-color: aqua;
+}
+td /* Toutes les cellules des tableaux... */
+{
+ border: 1px solid rgb(253, 0, 0); 
+    border-collapse: separate;
+}
