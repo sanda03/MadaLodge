@@ -1,21 +1,46 @@
 body {
-    background: url('../img/hotels/luxury-pool-villa-spectacular-contemporary-design-digital-art-real-estate-home-house-property-ge.jpg');
-    background-size: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url('../img/graphic-node-yPSbirjJWzs-unsplash.jpg');
+    background-size: cover;
     background-position: 0vw -17vw;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
     margin: 0;
 }
-#page {
-    margin-top: 23vw;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-connect {
+    background-color: rgb(87, 126, 79);
+    color: black;
+    border-radius: 25px 0px 0px 25px;
+    box-shadow: 1px 2px 7px #301b18;
+    font-family: 'Bellota';
+    font-size: 1.5vw;
+    padding: 1vw;
+}
+#exampleModalToggleLabel {
+}
+#auth {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+section {
+    display: flex;
+    align-items: flex-end;
     background: url('../img/bg-list_hotels.png');
-    height: 75%;
+    background-position: center;
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
 }
-#page h1 {
+section h1 {
     text-align: center;
 }
 
@@ -29,14 +54,15 @@ body {
     height: 100vh;
 }
 #hotels img {
+    height: 18vw;
 }
 @media screen and (max-width: 780x) {
-    #page {
+    section {
         margin-top: 15vw;
     }
 }
 
 @media screen and (max-width: 628x) {
-    #page {
+    section {
     }
 }
