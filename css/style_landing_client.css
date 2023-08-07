@@ -87,7 +87,7 @@
   }
   
   
-  #search-form {
+  #reservation-form {
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -97,14 +97,14 @@
     background-color: #0d491d53;
   }
   
-  #search-form input {
+  #reservation-form input {
     padding: 10px;
     margin: 5px;
     border: none;
     border-radius: 5px;
   }
   
-  #search-form button {
+  #reservation-form button {
     padding: 10px 20px;
     margin: 5px;
     border: none;
@@ -129,3 +129,11 @@
   .cta-button:hover {
     background-color: #e7523b;
   }
+
+#room_options {
+  background-color: #093817;
+  text-align: start;
+}
+.filters label {
+  background-color: black;
+}
