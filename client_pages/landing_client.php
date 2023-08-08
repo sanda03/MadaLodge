@@ -20,14 +20,13 @@
     <script scr="../js/bootstrap.js" defer></script>
 </head>
 <body>
-    <header id="header">
-        <div class="container">
-            <div class="logo">
-                <img src="../img/Capture-removebg-preview.png" alt="Logo">
-            </div>
-            <nav>
+    <header>
+        <div class="container-fluid">
+            <img src="../img/logo_madalodge.png" alt="Logo" class="col-3">
+            <nav class="col-3">
                 <ul>
                     <li><a href="contact.php">Contact</a></li>
+                    <li><a class="btn-deconnect" href="../index.php" role="button">Se Déconnecter</a></li>
                 </ul>
             </nav>
         </div>
