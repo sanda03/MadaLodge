@@ -2,8 +2,20 @@
 <html>
 <head>
     <title>Nombre total de réservations pour un hôtel</title>
+    <link rel="stylesheet" href="recep.css">
 </head>
 <body>
+    <header>
+        <h1>Tableau de bord</h1>
+    </header>
+
+    <nav>
+        <a href="test_rep.php.php">Vérifier Paiement</a>
+        <a href="med_10.php">Total Réservations</a>
+        <a href="hard2.php">Chambres Libres</a>
+        <a href="pay.php">Réservations Client</a>
+        <a href="basic5.php">Liste Réservations</a>
+    </nav>
     <h1>Nombre total de réservations pour un hôtel</h1>
 
     <form action="" method="POST">
@@ -60,3 +72,4 @@
     ?>
 </body>
 </html>
+
