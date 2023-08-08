@@ -1,0 +1,106 @@
+body {
+    font-family: 'Bellota';
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/graphic-node-yPSbirjJWzs-unsplash.jpg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+a[href="../index.php"] {
+    background-color: rgba(189, 97, 69, 0.7);
+    border-radius: 20px 0px 0px 20px;
+    padding: 0.5vw;
+}
+header img {
+    height: 3vw;
+}
+nav {
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 10px 0;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+}
+nav a:hover {
+    background-color: #ddd;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1, h2 {
+    text-align: center;
+}
+body h1 {
+    background-color: rgba(19, 85, 17, 0.6);
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px white;
+    color : white;
+}
+body form {
+    background-color: rgba(189, 160, 128, 0.8);
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px white;
+    padding: 3vw;
+}
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    background-color: #194209;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Bellota';
+}
+input[type="submit"]:hover {
+    background-color: #68d15f;
+    font-family: 'Bellota';
+}
+.result {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-top: 20px;
+}
+#resultats {
+    background-color: rgba(147, 189, 128, 0.7);
+    border-radius: 10px;
+}
+#confirm_now {
+    background-color: rgba(147, 189, 128, 0.7);
+}
+#close {
+    background-color: rgba(189, 97, 69, 0.7);
+}
