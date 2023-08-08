@@ -1,9 +1,25 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Vérifier le paiement d'un client et montant à payer</title>
+    <link rel="stylesheet" href="recep.css">
 </head>
 <body>
+    <header>
+        <h1>Tableau de bord</h1>
+    </header>
+     
+    <nav>
+        <a href="pay.php">Vérifier Paiement</a>
+        <a href="med_10.php">Total Réservations</a>
+        <a href="hard2.php">Chambres Libres</a>
+        <a href="basic8.php">Réservations Client</a>
+        <a href="basic5.php">Liste Réservations</a>
+    </nav>
+    
+    
     <h1>Vérifier le paiement d'un client et montant à payer</h1>
 
     <form action="" method="POST">
@@ -61,4 +77,3 @@
     ?>
 </body>
 </html>
-
