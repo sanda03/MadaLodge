@@ -99,9 +99,7 @@
                                             <button class="btn btn-primary" data-bs-dismiss="modal">
                                                 Close Window
                                             </button>
-                                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
-                                                Réserver
-                                            </button>
+                                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Réserver</button>
                                         </div>
                                     </div>
                                 </div>
