@@ -2,8 +2,20 @@
 <html>
 <head>
     <title>Liste des chambres libres sur une période</title>
+    <link rel="stylesheet" href="recep.css">
 </head>
 <body>
+    <header>
+        <h1>Tableau de bord</h1>
+    </header>
+
+    <nav>
+        <a href="test_rep.php.php">Vérifier Paiement</a>
+        <a href="med_10.php">Total Réservations</a>
+        <a href="hard2.php">Chambres Libres</a>
+        <a href="pay.php">Réservations Client</a>
+        <a href="basic5.php">Liste Réservations</a>
+    </nav>
     <h1>Liste des chambres libres sur une période</h1>
 
     <form action="" method="POST">
@@ -37,7 +49,7 @@
                 FROM hotel h
                 JOIN room r ON h.id = r.id_hotel
                 LEFT JOIN reservation res ON r.id = res.id_room
-                WHERE res.id IS NULL OR (res.start_timestamp > '$dateDebut 037777777777:00:00' OR res.end_timestamp < '$dateFin 00:00:00')
+                WHERE res.id IS NULL OR (res.start_timestamp > '$dateDebut 03:00:00' OR res.end_timestamp < '$dateFin 00:00:00')
                 ORDER BY h.name, r.id";
 
         $result = $conn->query($sql);
